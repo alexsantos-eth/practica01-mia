@@ -1,0 +1,37 @@
+{
+  "Model": {
+    "type": "object",
+    "required": [
+      "bill_id",
+      "amount",
+      "date_in",
+      "date_out",
+      "employee_id",
+      "customer_id",
+      "movie_id"
+    ],
+    "properties": {
+      "bill_id": {
+        "type": "string"
+      },
+      "amount": {
+        "type": "number"
+      },
+      "date_in": {
+        "type": "string"
+      },
+      "date_out": {
+        "type": "string"
+      },
+      "employee_id": {
+        "type": "string"
+      },
+      "customer_id": {
+        "type": "string"
+      },
+      "movie_id": {
+        "type": "string"
+      }
+    }
+  }
+}

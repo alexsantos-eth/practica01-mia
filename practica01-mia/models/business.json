@@ -1,0 +1,72 @@
+{
+  "Employee": {
+    "type": "object",
+    "required": [
+      "employee_id",
+      "c_name",
+      "last_name",
+      "c_address",
+      "email",
+      "active",
+      "user_name",
+      "password",
+      "store_id"
+    ],
+    "properties": {
+      "employee_id": {
+        "type": "string"
+      },
+      "c_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "c_address": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "active": {
+        "type": "bool"
+      },
+      "user_name": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "store_id": {
+        "type": "string"
+      }
+    }
+  },
+  "Boss": {
+    "type": "object",
+    "required": ["boss_id", "store_id", "employee_id"],
+    "properties": {
+      "boss_id": {
+        "type": "number"
+      },
+      "store_id": {
+        "type": "number"
+      },
+      "employee_id": {
+        "type": "number"
+      }
+    }
+  },
+  "Store": {
+    "type": "object",
+    "required": ["store_id", "c_address"],
+    "properties": {
+      "store_id": {
+        "type": "number"
+      },
+      "c_address": {
+        "type": "string"
+      }
+    }
+  }
+}

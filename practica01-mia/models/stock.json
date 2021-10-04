@@ -1,0 +1,93 @@
+{
+  "Movie": {
+    "type": "object",
+    "required": [
+      "movie_id",
+      "title",
+      "description",
+      "year",
+      "m_duration",
+      "days",
+      "price",
+      "fee",
+      "type"
+    ],
+    "properties": {
+      "movie_id": {
+        "type": "number"
+      },
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "year": {
+        "type": "number"
+      },
+      "m_duration": {
+        "type": "number"
+      },
+      "days": {
+        "type": "number"
+      },
+      "price": {
+        "type": "number"
+      },
+      "fee": {
+        "type": "number"
+      },
+      "type": {
+        "type": "string"
+      }
+    }
+  },
+  "Category": {
+    "type": "object",
+    "required": ["category_id", "title", "movie_id"],
+    "properties": {
+      "category_id": {
+        "type": "number"
+      },
+      "movie_id": {
+        "type": "number"
+      },
+      "title": {
+        "type": "string"
+      }
+    }
+  },
+  "Actor": {
+    "type": "object",
+    "required": ["actor_id", "name", "last_name", "movie_id"],
+    "properties": {
+      "actor_id": {
+        "type": "number"
+      },
+      "movie_id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      }
+    }
+  },
+  "Translate": {
+    "type": "object",
+    "required": ["translate_id", "lang", "movie_id"],
+    "properties": {
+      "translate_id": {
+        "type": "number"
+      },
+      "movie_id": {
+        "type": "number"
+      },
+      "lang": {
+        "type": "string"
+      }
+    }
+  }
+}

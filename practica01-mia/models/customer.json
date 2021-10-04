@@ -1,0 +1,106 @@
+{
+  "Model": {
+    "type": "object",
+    "required": [
+      "customer_id",
+      "last_name",
+      "favorite",
+      "email",
+      "c_name",
+      "c_date",
+      "active"
+    ],
+    "properties": {
+      "customer_id": {
+        "type": "number"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "favorite": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "c_name": {
+        "type": "string"
+      },
+      "c_date": {
+        "type": "string"
+      },
+      "active": {
+        "type": "bool"
+      }
+    }
+  },
+  "CityAddress": {
+    "type": "object",
+    "required": [
+      "address_id",
+      "postal_code",
+      "district",
+      "customer_id",
+      "city_id"
+    ],
+    "properties": {
+      "address_id": {
+        "type": "number"
+      },
+      "customer_id": {
+        "type": "number"
+      },
+      "district": {
+        "type": "string"
+      },
+      "postal_code": {
+        "type": "string"
+      },
+      "city_id": {
+        "type": "number"
+      }
+    }
+  },
+  "Country": {
+    "type": "object",
+    "required": ["city_id", "c_name"],
+    "properties": {
+      "city_id": {
+        "type": "number"
+      },
+      "c_name": {
+        "type": "string"
+      }
+    }
+  },
+  "City": {
+    "type": "object",
+    "required": ["city_id", "c_name", "country"],
+    "properties": {
+      "city_id": {
+        "type": "number"
+      },
+      "c_name": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      }
+    }
+  },
+  "CustomerAddress": {
+    "type": "object",
+    "required": ["customer_address_id", "customer_id", "address_id"],
+    "properties": {
+      "customer_address_id": {
+        "type": "number"
+      },
+      "customer_id": {
+        "type": "number"
+      },
+      "address_id": {
+        "type": "number"
+      }
+    }
+  }
+}
