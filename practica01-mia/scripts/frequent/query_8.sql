@@ -38,4 +38,5 @@ SELECT temp_rents.cs,
         '%'
     )
 FROM temp_rents
-    INNER JOIN temp_bills ON temp_rents.cs = temp_bills.cs;
+    INNER JOIN temp_bills ON temp_rents.cs = temp_bills.cs
+ORDER BY country_id;
